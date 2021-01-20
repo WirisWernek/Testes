@@ -229,3 +229,164 @@ ver mais em https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/
     -Apontará para lugares diferentes
     -so funciona se o arquivo estiver dentro da pasta indicada
     Ex: <a href="./Teste1.html">Testes</a> 
+---------------------------------------------------------------------------------
+#Tabelas 
+-><table></table>  cria uma tabelas
+-><th></th>        cabeçalho da tabela
+-><tr></tr>        cria uma linha da tabela
+-><td></td>        cria uma coluna
+    Ex:
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+        <tr>
+            <td>Wiris</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>João</td>
+            <td>19</td>
+        </tr>
+    </table>
+----------------------------------------------------------------------------------------
+#Organizando a tabela
+-><caption></caption> descrição da tabela
+-><thead></thead>     onde deve ficar o cabeçalho
+-><tbody></tbody>     onde deve ficar o corpo
+-><tfoot></tfoot>     onde deve ficar o rodapé
+    Ex:
+        <table>
+            <caption>Pessoas por idade</caption>
+            <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Wiris</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>João</td>
+                    <td>19</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>2 Pessoas</td>
+                </tr>
+            </tfoot>
+        </table>
+
+-><th colspan="x"></th>    ocupa x colunas
+-><th rowspan="x"></th>    ocupa x linha
+-><colgroup></colgroup>    refencia as colunas da tabela, dentro dele pra usar o colspan coloca-se só span
+    Ex:
+    <table>
+        <caption>Produzidos x Vendidos por Loja</caption>
+        <colgroup>
+            <col>
+            <col span="2" style="background-color: crimson;">
+            <col span="2" style="background-color: darkblue;">
+        </colgroup>
+    
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">Afonso Pena</th>
+                <th colspan="2">Antônia Pereira</th>
+            </tr>
+            <tr>
+                <th>Produzidos</th>
+                <th>Vendidos</th>
+                <th>Produzidos</th>
+                <th>Vendidos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Vassouras</th>
+                <td>50</td>
+                <td>30</td>
+                <td>20</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <th>Baldes</th>
+                <td>10</td>
+                <td>10</td>
+                <td>30</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+    </table>
+
+->scope   serve pra referenciar linhas e colunas em leitores de tela(acessibilidade)
+
+    Ex:
+    <table>
+        <caption>Produzidos x Vendidos por Loja</caption>
+        <colgroup>
+            <col>
+            <col span="2" style="background-color: crimson;">
+            <col span="2" style="background-color: blue;">
+        </colgroup>
+    
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2" scope="colgroup">Afonso Pena</th>
+                <th colspan="2" scope="colgroup">Antônia Pereira</th>
+            </tr>
+            <tr>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Vassouras</th>
+                <td>50</td>
+                <td>30</td>
+                <td>20</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <th>Baldes</th>
+                <td>10</td>
+                <td>10</td>
+                <td>30</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+    </table>
+---------------------------------------------------------------------------------------------------
+#A Tag head
+-><head></head> 
+-><meta>           recebe atributos
+->charset          define a codificação da página
+->name e content   define a portabilidade para dispositivos móveis
+
+#links para icones personalizados
+<link rel="icon" href="link ou caminho">
+
+#SEO  search engine optimization(otimização para motores de busca=Ex:google)
+-><meta charset="UTF-8">
+-><meta name="viewport" content="width=device-width, initial-scale=1.0">
+-><meta name="author" content="Wiris Wernek">
+-><meta name="descriptions" content="Um site feito por um iniciante">
+-><meta name="robots" content="noindex, follow"> ou index ou nofollow, vale testar
+
+#Meta Social
+Ex:
+    <meta property="og:image" content="caminho ou link">
+    <meta property="og:description" content="aqui vem um texto para ser mostrado ao compartilhar no facebook">
+    <meta property="og:title" content="Um site de Wiris">
+    <meta name="twitter:title" content="Wiris">
