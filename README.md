@@ -1,2 +1,2 @@
-# Arquivos-VS-Code
-Este repositório é para os meus estudos de cursos e atividades que não tem relação com a faculdade
+# Testes
+Este repositório é para os meus estudos de cursos e atividades extras de algumas coisas que estou aprendendo e testando
