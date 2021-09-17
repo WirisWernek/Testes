@@ -1,47 +1,53 @@
-body{
-    background: #f7f7f7;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+body {
+  background: #f7f7f7;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 900px;
+  margin: auto;
 }
-#title, .subtitle, .posttitle{
-    color: #505050;
-    font-size: 40px;
-    text-transform: uppercase;
+#title,
+.subtitle,
+.posttitle {
+  color: #505050;
+  font-size: 40px;
+  text-transform: uppercase;
 }
-a{
-    text-decoration: line-through;
-    color: #505050;
+a {
+  text-decoration: line-through;
+  color: #505050;
 }
-.photo{
-    border: 1px solid #505050;
-    border-radius: 50%;
-    width: 300px;
-    height: 300px;
+.photo {
+  border: 1px solid #505050;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
 }
-.posttitle{
-    font-size: 16px;
-    font-style: italic;
-    margin: 0;
-    margin-bottom: 15px;
+.posttitle {
+  font-size: 16px;
+  font-style: italic;
+  margin: 0;
+  margin-bottom: 15px;
 }
-.post{
-    background: azure;
-    padding: 15px;
-    border: 3px solid #505050;
-    margin-bottom: 15px;
-    border-radius: 5px;
+.post {
+  background: azure;
+  padding: 15px;
+  border: 3px solid #505050;
+  margin-bottom: 15px;
+  border-radius: 5px;
 }
-.postcontent{
-    margin: 0;
-    margin-bottom: 15px;
-    text-transform: capitalize;
+.postcontent {
+  margin: 0;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  text-align: justify;
 }
-.image{
-    margin-bottom: 15px;
+.image {
+  margin-bottom: 15px;
+  width: 100%;
 }
-.contentlist{
-    list-style-type: none;
-    padding-left: 15px;
+.contentlist {
+  list-style-type: none;
+  padding-left: 15px;
 }
-.contentlist li a{
-    text-decoration: none;
+.contentlist li a {
+  text-decoration: none;
 }
